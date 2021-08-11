@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  flex-direction: row-reverse;
+  max-height: 60px;
+  /* max-width: 150px; */
+  min-width: 160px;
+}
+.logo__img {
+  flex: 1;
+}
+
+.logo__content {
+  direction: rtl;
+  flex: 2;
+
+  margin-right: 0.5rem;
+}
+.logo__title {
+  margin: 0;
+}
+.Logo__des {
+  margin: 0;
+}
+@media only screen and (min-width: 1140px) {
+  .logo {
+    min-width: 200px;
+  }
+}
