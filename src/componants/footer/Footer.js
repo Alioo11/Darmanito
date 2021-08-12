@@ -6,10 +6,22 @@ import Logo from "./../logo/Logo";
 import linkedin from "./../../assets/img/linkedin.svg";
 import black_bazar from "./../../assets/img/black-bazar.svg";
 import sib_app_black from "./../../assets/img/sib-app-black.svg";
+import support_phone_number from "./../../assets/img/support-phone-number.svg";
 
 function Footer() {
   return (
     <div>
+      <section className='support'>
+        <div className='support__icon'>
+          <img src={support_phone_number} alt='support_phone_number' />
+        </div>
+        <div className='support__content'>
+          <h2 className='support__content__title'>پشتیبانی درمانیتو</h2>
+          <p className='support__content__text'>
+            پاسخگویی در روزهای کاری از 9 صبح تا 9 شب
+          </p>
+        </div>
+      </section>
       <footer className='footer'>
         <section className='footer__media'>
           <div className='footer__media__logo'>
