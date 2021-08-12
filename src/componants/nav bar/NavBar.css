@@ -11,6 +11,7 @@
   position: fixed;
   width: 100%;
   background-color: white;
+  z-index: 10;
 }
 
 .nav__links__container ul {
@@ -66,12 +67,14 @@
   background-color: var(--blue);
 }
 .responsive-nav {
+  z-index: 10;
   display: none;
   position: fixed;
   width: 100%;
   background-color: white;
   height: 100vh;
   right: -100%;
+  background-color: white;
 }
 .unhide {
   right: 0;
@@ -88,6 +91,9 @@
 }
 .responsive-nav__close {
   margin-right: 20px;
+}
+.responsive-nav__close img {
+  margin-left: 20px;
 }
 .responsive-nav__links__container ul {
   margin-left: 6%;

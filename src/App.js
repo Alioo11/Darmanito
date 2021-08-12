@@ -9,7 +9,9 @@ import MainPage from "./componants/main page/MainPage";
 function App() {
   return (
     <div>
+      <NavBar />
       <MainPage />
+      <Footer />
     </div>
   );
 }

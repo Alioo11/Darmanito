@@ -1,7 +1,11 @@
+.main-body {
+  overflow: hidden;
+}
 /***********intro section***************/
 .intro {
   height: 730px;
   display: flex;
+  margin-top: 100px;
   flex-direction: row;
 }
 .intro__doc-img {
@@ -98,14 +102,222 @@
   font-size: 0.8rem;
 }
 
+/***************************facilities section**********************/
+
+.facilities {
+  display: flex;
+  flex-direction: row;
+}
+.facilities__content__box {
+  flex: 2;
+  height: 580px;
+  direction: rtl;
+  margin-top: 70px;
+}
+.facilities__logo-box {
+  flex: 1;
+  height: 580px;
+  direction: rtl;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: flex-start;
+}
+
+.facilities__content__box__step-by-step {
+  display: flex;
+  height: max-content;
+}
+
+.facilities__content__box__step-by-step__logo {
+  flex: 1;
+}
+
+.facilities__arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--lightblue);
+  text-align: center;
+  justify-content: center;
+  transform: rotate(270deg);
+}
+.facilities__arrow img {
+  margin-top: 10px;
+}
+.facilities__check {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--green);
+  text-align: center;
+}
+.facilities__check img {
+  margin-top: 10px;
+}
+
+.hr {
+  height: 80px;
+  width: 0;
+  border: 1px solid var(--lightblue);
+  margin-right: 16px;
+}
+
+.facilities__content__box__step-by-step__content {
+  flex: 8;
+}
+
+.facilities__logo-box__item {
+  width: 8.5em;
+  height: 8.5em;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0px 0px 15px rgba(24, 148, 255, 0.25);
+}
+.facilities__logo-box__item--deactive {
+  filter: grayscale(100%);
+}
+
+.facilities__logo-box__item img {
+  margin-top: 1rem;
+}
+
+/*************************app section******************************/
+
+.app {
+  background-color: var(--blue);
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hide;
+}
+.app__left-cloud {
+  position: absolute;
+  left: -200px;
+  z-index: 0;
+}
+.app__right-cloud {
+  position: absolute;
+  right: -150px;
+  top: -100px;
+  z-index: 0;
+}
+
+.app__phone {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.app__phone img {
+  position: absolute;
+  bottom: 0;
+  width: 25rem;
+}
+.app__content {
+  flex: 2;
+  z-index: 1;
+  margin-top: 60px;
+  padding: 4rem;
+  direction: rtl;
+  color: white;
+}
+.app__content__input-section {
+  margin-top: 30px;
+}
+.app__content__app-box {
+  margin-top: 30px;
+  display: flex;
+}
+.app__content__app-box img {
+  width: 10rem;
+  margin: 0.8rem;
+}
+
+/*****************************membership section*****************************/
+.membership {
+  height: 800px;
+  position: relative;
+  background-color: white;
+  font-size: 0.7rem;
+}
+.membership__subscription-bg {
+  position: absolute;
+  top: 80px;
+  right: -50px;
+}
+.membership__container {
+  position: absolute;
+  width: 80%;
+  height: 460px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(24, 148, 255, 0.25);
+  left: 50%;
+  margin-top: 180px;
+  margin-left: -40%;
+  display: flex;
+  justify-content: space-between;
+}
+.membership__content {
+  direction: rtl;
+  padding: 2.5rem;
+}
+.membership__content__text {
+  margin-top: 50px;
+}
+.membership__subscription {
+  display: flex;
+  align-items: flex-end;
+}
+
+.membership__content__input {
+  margin-top: 100px;
+  background-color: #f9f9f9;
+  font-size: 0.7rem;
+  width: 100%;
+}
+.membership__content__input input {
+  font-size: 0.7rem;
+  background-color: transparent;
+}
+.membership__content__input button {
+  font-size: 1.1em;
+  padding: 0.7em 1em;
+}
+
 @media only screen and (max-width: 1140px) {
   .about > :last-child {
     padding: 0%;
   }
+  /*************************app section*************************************/
   .about__app-prev__img {
     margin: 0;
     margin-top: 20%;
     width: 100%;
+  }
+  .app__content__app-box img {
+    width: 7rem;
+    margin: 0.1rem;
+  }
+  .membership__subscription {
+    width: 16rem;
+  }
+  .membership__subscription img {
+    width: 16rem;
+    justify-self: center;
+  }
+  .membership__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+  }
+  .membership__content__input {
+    margin-top: 50px;
   }
 }
 
@@ -140,7 +352,8 @@
     width: 50%;
     font-size: 1.5rem;
   }
-  /******************* about section**************************/
+
+  /******************* about section**********************************************/
   .about__content__logo__container {
     display: none;
   }
@@ -151,5 +364,62 @@
     max-width: 500px;
     width: 80%;
     padding: 10%;
+  }
+  /**********************facilities section***************************************/
+  .facilities {
+    flex-direction: column-reverse;
+  }
+  .facilities__logo-box {
+    overflow-x: scroll;
+    grid-template-columns: 200px 200px 200px 200px;
+  }
+  .facilities__content__box {
+    padding: 2rem;
+  }
+  .facilities__logo-box__item {
+    width: 10em;
+    height: 10em;
+  }
+
+  /************************app section ****************************************************/
+  .app {
+    flex-direction: column-reverse;
+    height: 890px;
+  }
+
+  .app__content {
+    margin-top: 0;
+  }
+
+  .app__left-cloud {
+    display: none;
+  }
+  .app__right-cloud {
+    display: none;
+  }
+  .app__content__app-box > :last-child {
+    display: none;
+  }
+
+  .app__phone {
+    padding: 10%;
+  }
+  .app__phone img {
+    width: 80%;
+    max-width: 550px;
+  }
+  .app__content__input-section {
+    width: 100%;
+  }
+  .app__content__app-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .app__content__app-box img {
+    width: 15rem;
+  }
+  /**********************************************************************/
+  .membership__content__input input {
+    width: 63%;
   }
 }
