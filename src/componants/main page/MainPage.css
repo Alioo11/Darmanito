@@ -43,6 +43,7 @@
   margin-right: 2.5rem;
 }
 .intro__content__btn-box {
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
 }
@@ -51,6 +52,7 @@
   margin: 0.35rem;
   padding: 0.5rem 0.95rem;
 }
+
 .intro__content__btn {
   border: 2px solid var(--blue);
   color: var(--blue);
@@ -60,6 +62,9 @@
   border: 2px solid var(--blue);
   color: white;
   background-color: var(--blue);
+}
+#intro-download-btn::before {
+  content: "دانلود درمانیتو";
 }
 /***************about section***********************/
 .about {
@@ -71,7 +76,7 @@
   direction: rtl;
 }
 .about__app-prev {
-  height: 600px;
+  height: 400px;
   flex: 1;
 }
 .about__app-prev__img {
@@ -80,7 +85,7 @@
   max-width: 400px;
 }
 .about__content {
-  height: 600px;
+  height: 400px;
   flex: 2;
 }
 .about__content__logo__container {
@@ -92,14 +97,21 @@
 }
 
 .about__container__logo__logo {
-  padding: 2rem;
+  padding: 1.8rem;
   border-radius: 1.1rem;
-  box-shadow: 0px 0px 15px rgba(24, 148, 255, 0.25);
+  box-shadow: 0px 0px 2.5rem rgba(24, 147, 255, 0.316);
 }
 
 .about__container__logo__item {
   border-radius: 15px;
   font-size: 0.8rem;
+}
+#about-description::before {
+  content: "درمانیتو یک سامانه است که امکان سفارش دارو، محصولات آرایشی بهداشتی نوبت گیری و مشاوره پزشکان را به راحتی و بصورت آنلاین فراهم کرده است";
+}
+
+#about-header::before {
+  content: "  درباره درمانیتو";
 }
 
 /***************************facilities section**********************/
@@ -107,26 +119,38 @@
 .facilities {
   display: flex;
   flex-direction: row;
+  font-size: 0.9rem;
+  padding: 0rem 3rem;
+}
+.facilities__titile {
+  margin-right: 6rem;
 }
 .facilities__content__box {
   flex: 2;
-  height: 580px;
+  height: 660px;
   direction: rtl;
   margin-top: 70px;
+  padding-right: 3rem;
 }
 .facilities__logo-box {
   flex: 1;
-  height: 580px;
+  height: 660px;
   direction: rtl;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   align-content: center;
   justify-items: flex-start;
+}
+.facilities__logo-box > :nth-child(1),
+.facilities__logo-box > :nth-child(3) {
+  justify-self: flex-end;
 }
 
 .facilities__content__box__step-by-step {
   display: flex;
   height: max-content;
+  margin-top: 3rem;
 }
 
 .facilities__content__box__step-by-step__logo {
@@ -166,14 +190,20 @@
 .facilities__content__box__step-by-step__content {
   flex: 8;
 }
+.facilities__content__box__step-by-step__content h2 {
+  font-weight: 100;
+}
+.facilities__content__box__step-by-step__content p {
+  padding-right: 4rem;
+}
 
 .facilities__logo-box__item {
-  width: 8.5em;
-  height: 8.5em;
-  border-radius: 15px;
+  width: 9em;
+  height: 9em;
+  border-radius: 1.2rem;
   text-align: center;
   margin: 10px;
-  box-shadow: 0px 0px 15px rgba(24, 148, 255, 0.25);
+  box-shadow: 0px 0px 20px rgba(24, 147, 255, 0.193);
 }
 .facilities__logo-box__item--deactive {
   filter: grayscale(100%);
@@ -181,6 +211,12 @@
 
 .facilities__logo-box__item img {
   margin-top: 1rem;
+}
+#facilitiess-title::before {
+  content: "امکانات درمانیتو";
+}
+#facilities-description::before {
+  content: "در سرویس داروخانه شما میتوانید نسخه دارویی یا محصول بهداشتی خودتون رو برای پیدا شدن به داروخانه و فروشگاه ها سفارش بدید  ";
 }
 
 /*************************app section******************************/
@@ -210,6 +246,7 @@
   flex: 1;
   position: relative;
   z-index: 1;
+  display: flex;
 }
 .app__phone img {
   position: absolute;
@@ -236,12 +273,16 @@
   margin: 0.8rem;
 }
 
+#app-descriptopn::before {
+  content: "برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.ل";
+}
+
 /*****************************membership section*****************************/
 .membership {
   height: 800px;
   position: relative;
   background-color: white;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 .membership__subscription-bg {
   position: absolute;
@@ -261,6 +302,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .membership__content {
   direction: rtl;
   padding: 2.5rem;
@@ -280,17 +322,32 @@
   width: 100%;
 }
 .membership__content__input input {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   background-color: transparent;
 }
 .membership__content__input button {
-  font-size: 1.1em;
-  padding: 0.7em 1em;
+  font-size: 1em;
+  padding: 0.7em 0.95em;
+}
+
+#membership-description::before {
+  content: "اگر به عنوان داروخانه یا مرکز درمانی قصد دارید در روند درمان و کسب کار خودتان تغییری ایجاد کنید درمانیتو منتظر شماست";
+}
+#memebership-title::before {
+  content: "  عضویت داروخانه یا مراکز درمانی   ";
 }
 
 @media only screen and (max-width: 1140px) {
   .about > :last-child {
     padding: 0%;
+  }
+  .facilities__logo-box {
+    grid-gap: 0px;
+  }
+  .facilities__logo-box__item {
+    width: 8em;
+    height: 8em;
+    font-size: 1rem;
   }
   /*************************app section*************************************/
   .about__app-prev__img {
@@ -302,6 +359,7 @@
     width: 7rem;
     margin: 0.1rem;
   }
+  /*****************************membership*****************************************/
   .membership__subscription {
     width: 16rem;
   }
@@ -314,10 +372,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    margin-top: 70px;
+    height: fit-content;
   }
   .membership__content__input {
     margin-top: 50px;
+  }
+  .membership__content__input input {
+    width: auto;
+  }
+  .membership__subscription-bg {
+    display: none;
+  }
+  /**********************************facilities**********************************************/
+  .facilities__logo-box__item p {
+    margin: 0.3rem;
   }
 }
 
@@ -352,8 +421,15 @@
     width: 50%;
     font-size: 1.5rem;
   }
+  #intro-download-btn::before {
+    content: "دانلود مستقیم اپ";
+  }
 
-  /******************* about section**********************************************/
+  /*************************** about section ************************************/
+
+  .about__content {
+    margin: 0% 10%;
+  }
   .about__content__logo__container {
     display: none;
   }
@@ -365,20 +441,60 @@
     width: 80%;
     padding: 10%;
   }
-  /**********************facilities section***************************************/
+  #about-description::before {
+    content: "درمانیتو یک سوپر اپلیکیشن هست که سعی داره با سرویس های متفاوتش روند درمان شمارو سریع تر کنه؛شما با درمانیتو میتونید نسخه خودتون رو برای تمام داروخانه های اطراف خودتون بفرستید";
+  }
+  #about-header::before {
+    content: "درمانیتو چی هست؟";
+  }
+
+  /**************************facilities section*********************************/
   .facilities {
     flex-direction: column-reverse;
   }
+
   .facilities__logo-box {
     overflow-x: scroll;
     grid-template-columns: 200px 200px 200px 200px;
   }
   .facilities__content__box {
-    padding: 2rem;
+    padding-right: 0;
+    margin-bottom: 5rem;
   }
   .facilities__logo-box__item {
     width: 10em;
     height: 10em;
+    margin: 30px 0px;
+  }
+  .facilities__logo-box__item p {
+    margin: 1rem;
+  }
+  .facilities__logo-box > :nth-child(1),
+  .facilities__logo-box > :nth-child(3) {
+    justify-self: flex-start;
+  }
+  .facilities__logo-box {
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 0;
+  }
+  .facilities__logo-box {
+    grid-gap: 0;
+  }
+
+  .facilities__content__box__step-by-step__content {
+    padding-right: 1rem;
+  }
+  .facilities__content__box__step-by-step__content p {
+    padding-right: 0rem;
+  }
+  .facilities__titile {
+    margin: 4rem 4rem;
+  }
+  #facilitiess-title::before {
+    content: " سرویس های درمانیتو";
+  }
+  #facilities-description::before {
+    content: "شما با درمانیتو میتونید نسخه و دارو خودتون رو اول برای تمام داروخانه های اطراف خودتون و اگر پیدا نشد در  تمام داروخانه ها ارسال کنید و در کمترین زمان دارو شما پیدا می شود ";
   }
 
   /************************app section ****************************************************/
@@ -389,6 +505,7 @@
 
   .app__content {
     margin-top: 0;
+    padding: 2rem;
   }
 
   .app__left-cloud {
@@ -397,15 +514,21 @@
   .app__right-cloud {
     display: none;
   }
-  .app__content__app-box > :last-child {
+  .app__content__app-box > :first-child {
     display: none;
   }
 
+  .app__content__text {
+    margin-bottom: 4rem;
+  }
+  .app__content__input-section {
+    height: 3.8rem;
+  }
   .app__phone {
-    padding: 10%;
+    justify-content: center;
   }
   .app__phone img {
-    width: 80%;
+    width: 32rem;
     max-width: 550px;
   }
   .app__content__input-section {
@@ -417,9 +540,18 @@
   }
   .app__content__app-box img {
     width: 15rem;
+    margin: 0.5rem;
   }
+  /*****************************main memebership*****************************************/
   /**********************************************************************/
-  .membership__content__input input {
-    width: 63%;
+  #app-descriptopn::before {
+    content: "شما میتونید شماره خودتون یا دوست خودتون رو وارد کنید تا لینک دانلود پیامک بشه";
+  }
+
+  #membership-description::before {
+    content: "اگر شما داروخانه یا مرکز درمانی هستید و قصد دارید در روند  درمان هموطن هامون و کسب کار خودتون تغییری ایجاد کنید درمانیتو منتظر شماست ";
+  }
+  #memebership-title::before {
+    content: "من داروخانه یا مرکز درمانی هستم";
   }
 }

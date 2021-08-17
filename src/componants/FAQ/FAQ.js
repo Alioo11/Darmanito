@@ -1,7 +1,16 @@
 import React, { useState } from "react";
+import QuestionsAndAnswers from "./QuestionsAndAnswers";
+
+import NavBar from "./../nav bar/NavBar";
+import Footer from "./../footer/Footer";
+
 import "./FAQ.css";
-import plus from "./../../assets/img/plus.svg";
-import minus from "./../../assets/img/minus.svg";
+import pharmacy from "./../../assets/img/pharmacy.svg";
+import shop from "./../../assets/img/shop.svg";
+import doctor_toys from "./../../assets/img/doctor-toys.svg";
+import calendar from "./../../assets/img/calender.svg";
+import left_shape_FQ from "./../../assets/img/left-shape-FQ.svg";
+import right_shape_FQ from "./../../assets/img/right-shape-FQ.svg";
 
 function FAQ() {
   const [questionData, setQuestionData] = useState([
@@ -31,63 +40,78 @@ function FAQ() {
     },
   ]);
 
-  return <div></div>;
+  const hadleOpenQuestion = (QuestionId) => {
+    setQuestionData(
+      questionData.map((item) => {
+        if (item.id == QuestionId) {
+          return { ...item, isSelected: !item.isSelected };
+        } else {
+          return { ...item, isSelected: false };
+        }
+      })
+    );
+  };
+  return (
+    <div>
+      <NavBar />
+      <div className='FAQ-main'>
+        <main className='FAQ__blue-header'>
+          <img
+            className='FAQ__blue-header__left-shape'
+            src={left_shape_FQ}
+            alt='left_shape_FQ'
+          />
+          <img
+            className='FAQ__blue-header__right-shape'
+            src={right_shape_FQ}
+            alt='right_shape_FQ'
+          />
+          <p>سوالات متداول</p>
+        </main>
+        <h2 className='header FAQ__title'>سوال شما درباره کدوم سرویس هست؟</h2>
+        <main className='FAQ__cards'>
+          <div className='FAQ__cards__card'>
+            <div className='FAQ__cards__card__img'>
+              <img src={pharmacy} alt='pharmacy' />
+            </div>
+            <div className='FAQ__titile'>داروخانه</div>
+          </div>
+          <div className='FAQ__cards__card FAQ__cards__card--deactive'>
+            <div className='FAQ__cards__card__img'>
+              <img src={shop} alt='pharmacy' />
+            </div>
+            <div className='FAQ__cards__card__titile'>فروشگاه</div>
+          </div>
+          <div className='FAQ__cards__card FAQ__cards__card--deactive'>
+            <span>به زودی</span>
+            <div className='FAQ__cards__card__img'>
+              <img src={doctor_toys} alt='pharmacy' />
+            </div>
+            <div className='FAQ__cards__card__titile'>ویزیت آنلاین</div>
+          </div>
+          <div className='FAQ__cards__card FAQ__cards__card--deactive'>
+            <span>به زودی</span>
+            <div className='FAQ__cards__card__img'>
+              <img src={calendar} alt='pharmacy' />
+            </div>
+            <div className='FAQ__cards__card__titile'>ویزیت آنلاین</div>
+          </div>
+        </main>
+        <div className='FAQ__Questions-container '>
+          {questionData.map((data) => {
+            return (
+              <QuestionsAndAnswers
+                questionData={data}
+                hadleOpenQuestion={hadleOpenQuestion}
+              />
+            );
+          })}
+        </div>
+
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 export default FAQ;
-
-{
-  /*
-
-
-
-
-
-
-
-
-<div className={`questions-and-answers ${isSelected ? "open-answer" : ""}`}>
-      <div className='qustion-section'>
-        <div
-          onClick={() => {
-            hadleOpenQuestion(id);
-          }}
-          className='symbol'
-        >
-          <img
-            className={`${isSelected ? "hide" : ""}`}
-            src={plus}
-            alt='plus'
-          />
-          <img
-            className={`${isSelected ? "" : "hide"}`}
-            src={minus}
-            alt='minus'
-          />
-        </div>
-        <p>{question}</p>
-      </div>
-
-      <div className={`answer-section ${isSelected ? "" : "hide"}`}>
-        <p>{answer}</p>
-      </div>
-    </div>
-
-
-
-
-
-          <div className='questions-and-answers-container'>
-        {questionData.map((data) => {
-          return (
-            <QuestionAndAnswers
-              questionData={data}
-              hadleOpenQuestion={hadleOpenQuestion}
-            />
-          );
-        })}
-      </div>
-
-
-*/
-}

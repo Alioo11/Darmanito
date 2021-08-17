@@ -28,9 +28,19 @@ button {
 input {
   font-family: Yekan-ttf;
 }
+textarea {
+  font-family: Yekan-ttf;
+}
+.link {
+  text-decoration: inherit;
+  color: inherit;
+}
 
 .border {
   border: dashed orange 2px;
+}
+.hide {
+  display: none;
 }
 
 .btn {

@@ -3,6 +3,8 @@ import "./NavBar.css";
 import Logo from "./../logo/Logo";
 import close from "./../../assets/img/close.svg";
 
+import { Link } from "react-router-dom";
+
 function NavBar() {
   const [openNav, setOpenNav] = useState(true);
   return (
@@ -22,16 +24,16 @@ function NavBar() {
         <div className='nav__links__container'>
           <ul>
             <li className='nav__links nav__links--active'>
-              <a href='#'> صفحه اصلی </a>
+              <Link to='/'>صفحه اصلی </Link>
             </li>
             <li className='nav__links'>
-              <a href='#'> ما درباره </a>
+              <Link to='FAQ'> ما درباره </Link>
             </li>
             <li className='nav__links'>
-              <a href='#'> تماس باما </a>
+              <Link to='contact-us'> تماس باما </Link>
             </li>
             <li className='nav__links'>
-              <a href='#'>عضویت داروخانه ها </a>
+              <Link to='membership'>عضویت داروخانه ها </Link>
             </li>
           </ul>
         </div>
@@ -60,19 +62,19 @@ function NavBar() {
         <div className='responsive-nav__links__container'>
           <ul>
             <li className='responsive-nav__links responsive-nav__links--active'>
-              <a href='#'> صفحه اصلی </a>
+              <Link to='/'> صفحه اصلی </Link>
             </li>
             <li className='responsive-nav__links'>
-              <a href='#'> عضویت در داروخانه ها </a>
+              <Link to='membership'> عضویت در داروخانه ها </Link>
             </li>
             <li className='responsive-nav__links'>
-              <a href='#'> درباره ما </a>
+              <Link to='FAQ'> درباره ما </Link>
             </li>
             <li className='responsive-nav__links'>
-              <a href='#'> تماس باما </a>
+              <Link to='contact-us'> تماس باما </Link>
             </li>
             <li className='responsive-nav__links'>
-              <a href='#'> سوالات متداول </a>
+              <Link to='FAQ'> سوالات متداول </Link>
             </li>
             <li className='responsive-nav__links'>
               <a href='#'> قوانین و شرایط </a>

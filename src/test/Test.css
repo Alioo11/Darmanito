@@ -1,0 +1,5 @@
+#demo::placeholder {
+  content: url("./../assets/colors.jpg");
+  width: 100%;
+  height: 100%;
+}
