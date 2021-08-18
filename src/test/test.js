@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Test.css";
 
 function Test() {
+  const [isAvtive, setIsActive] = useState(true);
   return (
     <div>
-      <input id='demo' placeholder='halllo' type='text' />
+      <div
+        onClick={() => {
+          setIsActive(!isAvtive);
+        }}
+        className={`demo  ${isAvtive ? "" : "isDeActive"}`}
+      >
+        hello
+      </div>
     </div>
   );
 }

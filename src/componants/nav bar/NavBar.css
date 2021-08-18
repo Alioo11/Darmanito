@@ -75,6 +75,7 @@
   height: 100vh;
   right: -100%;
   background-color: white;
+  transition: right 300ms;
 }
 .unhide {
   right: 0;

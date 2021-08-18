@@ -1,5 +1,13 @@
-#demo::placeholder {
-  content: url("./../assets/colors.jpg");
-  width: 100%;
+.demo {
+  background-color: lightblue;
   height: 100%;
+  width: 150px;
+  position: fixed;
+  transition: left 3000;
+  left: 0;
+  transition: left 1000ms;
+}
+
+.isDeActive {
+  left: -100%;
 }
