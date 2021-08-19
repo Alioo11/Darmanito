@@ -39,7 +39,7 @@ function QuestionsAndAnswers({ questionData, hadleOpenQuestion }) {
           </p>
         </div>
 
-        <div className={`FAQ__Questions__answer ${isSelected ? "" : "hide"}`}>
+        <div className={`FAQ__Questions__answer`}>
           <p>{answer}</p>
         </div>
       </div>

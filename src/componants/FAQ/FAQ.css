@@ -71,7 +71,7 @@
 /***********************FAQ questions and answers*********************************/
 .FAQ__Questions-container {
   width: 90%;
-  height: 400px;
+  height: fit-content;
   padding: 5%;
 }
 
@@ -79,7 +79,6 @@
   position: static;
   z-index: 20;
   direction: rtl;
-  height: 70px;
   border: solid 1px rgb(179, 179, 179);
   width: 100%;
   border-top: none;
@@ -87,8 +86,15 @@
   border-right: none;
   display: flex;
   flex-direction: column;
+  transition: height 500ms;
+  height: 5rem;
+  background-color: white;
+  overflow: hidden;
 }
 
+.FAQ__Questions--open-answer {
+  height: 9rem;
+}
 .FAQ__Questions__question {
   display: flex;
   align-items: center;
@@ -102,11 +108,6 @@
 }
 .FAQ__Questions__symbol img {
   width: 100%;
-}
-
-.FAQ__Questions--open-answer {
-  height: fit-content;
-  /* height: 9rem; */
 }
 
 .hide {
@@ -151,5 +152,8 @@
   }
   .FAQ__Questions__answer {
     margin-right: 50px;
+  }
+  .FAQ__Questions--open-answer {
+    height: 12rem;
   }
 }
