@@ -68,7 +68,10 @@ function MainPage() {
         <main className='about'>
           <section className='about__content '>
             <h2 id='about-header' className='header'></h2>
-            <p id='about-description'></p>
+            <p
+              id='about-description'
+              className='about__content__description'
+            ></p>
             <div className='about__content__logo__container'>
               <div className='about__container__logo__item'>
                 <img

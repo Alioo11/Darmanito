@@ -47,6 +47,10 @@
   border: none;
   color: var(--blue);
 }
+.nav__btn:hover {
+  background-color: var(--blue);
+  color: white;
+}
 .nav__logo {
   font-size: 0.7rem;
 }

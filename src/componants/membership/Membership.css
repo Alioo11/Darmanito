@@ -1,6 +1,6 @@
 /*****************************about-membership********************************/
 .about-membership {
-  padding-top: 50px;
+  padding-top: 100px;
   display: flex;
   flex-direction: row;
 }
@@ -83,25 +83,21 @@
   height: 500px;
 }
 .about-membership__content__titile {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--blue);
+  font-weight: 900;
 }
 .about-membership__content__input {
+  margin-top: 4rem;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   background-color: #f9f9f9;
 }
 .about-membership__content__input input {
-  font-size: 0.85em;
-
-  width: 60%;
+  width: 45%;
   background-color: #f9f9f9;
 }
-
 .about-membership__content__input button {
   padding: 0.5rem 1rem;
-  font-size: 0.85em;
 }
 
 /**************************membership blue statics*****************************************/
@@ -131,11 +127,14 @@
 }
 /**************************membership about section****************************************/
 .membership-about-facilities {
-  padding: 4rem;
+  padding: 0rem 4rem 4rem 4rem;
 }
 .membership-about-facilities__title {
   direction: rtl;
   margin: 5rem 0rem;
+}
+.membership-about-facilities__title h2 {
+  font-size: 1.25rem;
 }
 .membership-about-facilities__cards {
   width: 100%;
@@ -160,7 +159,7 @@
 }
 .membership-about-facilities__cards__card__title {
   color: var(--darkblue);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   direction: rtl;
 }
 .membership-about-facilities__cards__card__content {
@@ -173,7 +172,9 @@
 }
 
 .membership-about-facilities__cards__card__btn button {
-  padding: 0.7rem 3.5rem;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
   background-color: var(--blue);
   border: none;
   color: white;
@@ -198,6 +199,12 @@
     width: 16em;
   }
 }
+@media only screen and (max-width: 820px) {
+  .about-membership__content__input button {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.7rem;
+  }
+}
 @media only screen and (max-width: 720px) {
   .about-membership {
     flex-direction: column;
@@ -215,16 +222,20 @@
   .about-membership__content {
     font-size: 1.2rem;
   }
-  .about-membership__content__input {
-    margin-top: 90px;
-  }
-  .about-membership__content__input button {
-    font-size: 0.95rem;
-  }
   .membership__blue-statics {
     flex-direction: column;
     height: 450px;
   }
+
+  .membership__blue-statics__section h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .membership__blue-statics__section p {
+    font-size: 1.2rem;
+  }
+
   .membership-about-facilities__cards {
     flex-direction: column;
     align-items: center;
@@ -242,6 +253,7 @@
     content: "فقط داروخانه";
   }
   .membership-about-facilities__cards__card__img {
+    height: 10rem;
     visibility: hidden;
   }
 }

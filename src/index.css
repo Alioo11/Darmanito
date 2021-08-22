@@ -63,9 +63,9 @@ p {
 }
 .input-section {
   width: 80%;
+  height: 3.75rem;
   border-radius: 0.6rem;
   background-color: white;
-  height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,23 +74,22 @@ p {
   border: none;
   color: white;
   background-color: var(--blue);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 0.4rem;
   padding: 0.2em 1em;
-  margin-left: 15px;
-  width: fit-content;
+  margin-left: 1rem;
 }
 .input-section input {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: none;
   width: 70%;
   height: 90%;
   border-radius: 20px;
+  padding: 0rem 1.5rem;
 }
-::placeholder {
-  padding: 0 1.5rem;
+.input-section input:focus {
+  outline: none;
 }
-
 @media only screen and (min-width: 2000px) {
   html {
     font-size: 1.3rem;

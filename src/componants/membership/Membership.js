@@ -102,7 +102,7 @@ function Membership() {
       </main>
       <main className='membership-about-facilities'>
         <section className='membership-about-facilities__title'>
-          <h3 className='header'>در درمانیتو چه خدمات ارائه خواهید داد؟</h3>
+          <h2 className='header'>در درمانیتو چه خدمات ارائه خواهید داد؟</h2>
           <p id='membership-about-description'></p>
         </section>
         <section className='membership-about-facilities__cards'>

@@ -99,6 +99,10 @@
   font-size: 1.2rem;
   color: var(--darkblue);
 }
+.FAQ__Questions__question p {
+  font-size: 0.9rem;
+  line-height: 3rem;
+}
 
 .FAQ__Questions__symbol {
   padding: 0px 30px 0px 30px;
@@ -135,11 +139,15 @@
 }
 
 @media only screen and (max-width: 720px) {
+  .FAQ__blue-header {
+    font-size: 1.5rem;
+    height: 5rem;
+  }
   .FAQ__blue-header img {
     display: none;
   }
   .FAQ__cards {
-    grid-template-columns: repeat(4, 180px);
+    grid-template-columns: repeat(4, 150px);
   }
   .questions-and-answers {
     font-size: 0.9em;

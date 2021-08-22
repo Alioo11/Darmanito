@@ -56,9 +56,13 @@
 }
 .footer__media__media-list {
   display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 80px;
 }
 .footer__media__media-list img {
-  margin: 0px 10px;
+  margin: 1rem 1.2rem;
 }
 
 /************** footer links*********************/
@@ -142,8 +146,8 @@
   .footer__media {
     font-size: 1rem;
   }
-  .footer__media__media-list img {
-    margin: 0rem 2.5rem 4rem 2.5rem;
+  .footer__media__media-list {
+    justify-content: center;
   }
   .support {
     flex-direction: column-reverse;
