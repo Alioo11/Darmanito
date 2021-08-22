@@ -31,7 +31,7 @@
 
 .FAQ__title {
   margin: 2rem 5rem;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
 }
 
 .FAQ__cards {
@@ -79,11 +79,8 @@
   position: static;
   z-index: 20;
   direction: rtl;
-  border: solid 1px rgb(179, 179, 179);
+  border-bottom: solid 1px rgb(232, 232, 232);
   width: 100%;
-  border-top: none;
-  border-left: none;
-  border-right: none;
   display: flex;
   flex-direction: column;
   transition: height 500ms;

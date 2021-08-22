@@ -209,10 +209,7 @@ function MainPage() {
               <p
                 id='membership-description'
                 className='membership__content__text'
-              >
-                اگر به عنوان داروخانه یا مرکز درمانی قصد دارید در روند درمان و
-                کسب کار خودتان تغییری ایجاد کنید درمانیتو منتظر شماست
-              </p>
+              ></p>
               <div className='input-section membership__content__input'>
                 <input placeholder='شماره همراه را وارد کنید ' type='text' />
                 <button>ثبت نام سریع</button>

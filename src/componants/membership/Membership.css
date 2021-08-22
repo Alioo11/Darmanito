@@ -8,7 +8,7 @@
   flex: 1;
   position: relative;
   padding: 4rem 4rem 4rem 8rem;
-  height: 660px;
+  height: 500px;
 }
 .about-membership__cards > :nth-child(2) {
   transform: scale(0.8);
@@ -80,7 +80,7 @@
   direction: rtl;
   padding: 2.5rem;
   flex: 1;
-  height: 660px;
+  height: 500px;
 }
 .about-membership__content__titile {
   font-size: 1.4rem;

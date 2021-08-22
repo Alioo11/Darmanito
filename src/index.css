@@ -18,6 +18,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  font-weight: 100;
+}
+
 html {
   font-family: Yekan-ttf;
 }
@@ -31,14 +35,14 @@ input {
 textarea {
   font-family: Yekan-ttf;
 }
+p {
+  line-height: 2rem;
+}
 .link {
   text-decoration: inherit;
   color: inherit;
 }
 
-.border {
-  border: dashed orange 2px;
-}
 .hide {
   display: none;
 }
@@ -52,14 +56,14 @@ textarea {
 .header {
   font-size: 1.3rem;
   padding: 0;
-  padding-right: 0.6rem;
+  padding-right: 0.5rem;
   color: var(--darkblue);
-  border-right: 3px solid var(--green);
+  border-right: 4px solid var(--green);
   direction: rtl;
 }
 .input-section {
   width: 80%;
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
   background-color: white;
   height: 3rem;
   display: flex;
@@ -74,13 +78,17 @@ textarea {
   border-radius: 0.4rem;
   padding: 0.2em 1em;
   margin-left: 15px;
+  width: fit-content;
 }
 .input-section input {
   font-size: 1.2rem;
   border: none;
-  width: 75%;
+  width: 70%;
   height: 90%;
   border-radius: 20px;
+}
+::placeholder {
+  padding: 0 1.5rem;
 }
 
 @media only screen and (min-width: 2000px) {

@@ -48,6 +48,7 @@ function ContactUs() {
             <form action=''>
               <p>نام و نام خانوادگی</p>
               <input
+                className='contact-us__form__name--active'
                 placeholder='ایمیل یا شماره همراه'
                 type='text'
                 name='name'
@@ -66,7 +67,7 @@ function ContactUs() {
                 cols='30'
                 rows='10'
               ></textarea>
-              <button className='btn contact-us__form__bun'>ارسال پیام</button>
+              <button className='btn contact-us__form__btn'>ارسال پیام</button>
             </form>
           </section>
         </main>
