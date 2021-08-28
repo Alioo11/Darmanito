@@ -142,7 +142,7 @@
 }
 .facilities__content__box {
   flex: 2;
-  height: 660px;
+  height: fit-content;
   direction: rtl;
   margin-top: 70px;
   padding-right: 3rem;

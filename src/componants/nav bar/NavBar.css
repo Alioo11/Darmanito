@@ -53,7 +53,6 @@
 }
 .nav__logo {
   font-size: 0.7rem;
-  margin-right: 35px;
 }
 
 .nav__burger {
@@ -164,6 +163,9 @@
   }
   .responsive-nav__btn--up {
     display: none;
+  }
+  .nav__logo {
+    margin-right: 1.6rem;
   }
 }
 @media only screen and (max-width: 450px) {
