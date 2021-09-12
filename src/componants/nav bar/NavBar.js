@@ -27,7 +27,7 @@ function NavBar() {
               <Link to='/'>صفحه اصلی </Link>
             </li>
             <li className='nav__links'>
-              <Link to='FAQ'> ما درباره </Link>
+              <Link to='FAQ'> درباره ما </Link>
             </li>
             <li className='nav__links'>
               <Link to='contact-us'> تماس باما </Link>

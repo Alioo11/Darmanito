@@ -70,7 +70,7 @@ function MainPage() {
             <h2 id='about-header' className='header'></h2>
             <p
               id='about-description'
-              className='about__content__description'
+              className='about__content__description fade-text'
             ></p>
             <div className='about__content__logo__container'>
               <div className='about__container__logo__item'>
@@ -120,7 +120,7 @@ function MainPage() {
           <div className='facilities'>
             <section className='facilities__content__box '>
               <h2>داروخانه آنلاین</h2>
-              <p id='facilities-description'></p>
+              <p className='fade-text' id='facilities-description'></p>
               <div className='facilities__content__box__step-by-step'>
                 <div className='facilities__content__box__step-by-step__logo'>
                   <div className='facilities__arrow'>
@@ -135,18 +135,17 @@ function MainPage() {
                     <img src={check} alt='check' />
                   </div>
                 </div>
-
                 <div className='facilities__content__box__step-by-step__content'>
                   <h2>قدم اول</h2>
-                  <p>
+                  <p className='fade-text'>
                     وارد بخش سفارش با عکس نسخه شوید و عکس و توضیحات را وارد کنید
                   </p>
                   <h2>قدم دوم</h2>
-                  <p>
+                  <p className='fade-text'>
                     بعد از ارسال عکس نسخه، باید آدرس محل خودتون رو وارد کنید
                   </p>
                   <h2>قدم سوم</h2>
-                  <p>
+                  <p className='fade-text'>
                     اگر نتیجه جستجوی نسخه موفقیت آمیز باشه باید منتظر تحویل
                     سفارش باشید
                   </p>
@@ -158,15 +157,15 @@ function MainPage() {
                 <img src={pharmacy} alt='pharmacy' />
                 <p>داروخانه</p>
               </div>
-              <div className='facilities__logo-box__item facilities__logo-box__item--deactive'>
+              <div className='facilities__logo-box__item deactive-item'>
                 <img src={shop} alt='pharmacy' />
                 <p>فروشگاه</p>
               </div>
-              <div className='facilities__logo-box__item facilities__logo-box__item--deactive'>
+              <div className='facilities__logo-box__item deactive-item'>
                 <img src={doctor_toys} alt='pharmacy' />
                 <p>ویزیت آنلاین</p>
               </div>
-              <div className='facilities__logo-box__item facilities__logo-box__item--deactive'>
+              <div className='facilities__logo-box__item deactive-item'>
                 <img src={calender} alt='pharmacy' />
                 <p> نوبت دهی آنلاین </p>
               </div>

@@ -40,7 +40,7 @@
 }
 .intro__content > div {
   margin-top: 200px;
-  margin-right: 2.5rem;
+  margin-right: 15%;
 }
 .intro__content__btn-box {
   margin-top: 3rem;
@@ -52,8 +52,9 @@
   margin: 0.35rem;
   padding: 0.5rem 0.95rem;
 }
-.intro__content__btn-box :first-child {
+.intro__content__btn-box > :first-child {
   border: none;
+  padding: 0.5rem 2rem;
 }
 .intro__content__btn-box > :first-child:hover {
   background-color: var(--lightblue);
@@ -98,6 +99,7 @@
 .about__content {
   height: 400px;
   flex: 2;
+  max-width: 45rem;
 }
 .about__content__logo__container {
   margin-top: 50px;
@@ -112,9 +114,9 @@
 }
 .about__container__logo__logo {
   background-color: white;
-  padding: 1.8rem;
-  border-radius: 1.1rem;
-  box-shadow: 0px 0px 2.5rem rgba(24, 147, 255, 0.216);
+  padding: 1.4rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
 }
 
 .about__container__logo__item {
@@ -135,17 +137,27 @@
   display: flex;
   flex-direction: row;
   font-size: 0.9rem;
-  padding: 0rem 3rem;
+  padding: 0% 8%;
+}
+.facilities > section {
+  margin-top: 5rem;
 }
 .facilities__titile {
-  margin-right: 6rem;
+  margin: 0% 10%;
 }
 .facilities__content__box {
   flex: 2;
   height: fit-content;
   direction: rtl;
-  margin-top: 70px;
   padding-right: 3rem;
+  align-items: flex-start;
+}
+.facilities__content__box > h2 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.facilities__content__box > p {
+  font-size: 0.87rem;
 }
 .facilities__logo-box {
   flex: 1;
@@ -153,8 +165,8 @@
   direction: rtl;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  align-content: center;
+  grid-gap: 40px;
+  align-content: flex-start;
   justify-items: flex-start;
 }
 .facilities__logo-box > :nth-child(1),
@@ -165,7 +177,7 @@
 .facilities__content__box__step-by-step {
   display: flex;
   height: max-content;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .facilities__content__box__step-by-step__logo {
@@ -196,7 +208,7 @@
 }
 
 .hr {
-  height: 80px;
+  height: 60px;
   width: 0;
   border: 1px solid var(--lightblue);
   margin-right: 16px;
@@ -207,23 +219,25 @@
 }
 .facilities__content__box__step-by-step__content h2 {
   font-weight: 100;
+  font-size: 1em;
+  margin-bottom: 0;
 }
 .facilities__content__box__step-by-step__content p {
-  padding-right: 4rem;
+  padding-right: 2.5rem;
+  font-size: 0.87em;
+  margin: 0.4rem 0rem;
 }
 
 .facilities__logo-box__item {
-  width: 9em;
-  height: 9em;
-  border-radius: 1.2rem;
+  width: 10em;
+  height: 10em;
+  border-radius: 1.4rem;
   text-align: center;
   margin: 10px;
   box-shadow: 0px 0px 20px rgba(24, 147, 255, 0.193);
 }
-.facilities__logo-box__item--deactive {
-  filter: grayscale(100%);
+.facilities__logo-box__item p {
 }
-
 .facilities__logo-box__item img {
   margin-top: 1rem;
 }
@@ -247,8 +261,11 @@
 }
 .app__left-cloud {
   position: absolute;
-  left: -200px;
+  left: -100px;
+  top: -50px;
   z-index: 0;
+  opacity: 20%;
+  overflow: hidden;
 }
 .app__right-cloud {
   position: absolute;
@@ -345,6 +362,11 @@
   background-color: transparent;
   width: 43%;
 }
+
+.membership__content__input input {
+  content: ("this is the content");
+}
+
 .membership__content__input button {
   padding: 0.5rem 1rem;
 }
@@ -359,6 +381,13 @@
 @media only screen and (max-width: 1140px) {
   .about > :last-child {
     padding: 0%;
+  }
+  .intro__content__btn-box > :first-child {
+    border: none;
+    padding: 0.5rem 0.5rem;
+  }
+  .intro__content__btn-box > :last-child {
+    padding: 0.5rem 0.5rem;
   }
   .facilities__logo-box {
     grid-gap: 0px;
@@ -418,6 +447,9 @@
   /**********************************facilities**********************************************/
   .facilities__logo-box__item p {
     margin: 0.3rem;
+  }
+  .facilities__content__box__step-by-step__content p {
+    padding-right: 0rem;
   }
 }
 

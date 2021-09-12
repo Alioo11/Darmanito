@@ -47,6 +47,13 @@ p {
   display: none;
 }
 
+.fade-text {
+  color: rgb(110, 110, 110);
+}
+.deactive-item {
+  filter: grayscale(100%) opacity(40%);
+}
+
 .btn {
   border: solid 0.1rem black;
   font-size: 1.1rem;

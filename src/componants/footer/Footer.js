@@ -65,7 +65,7 @@ function Footer() {
               <a href='#'> سوالات متداول</a>
             </li>
             <li className='footer__links__item'>
-              <a href='#'> قوانین و شرایط</a>
+              <a href='#'>قوانین و شرایط</a>
             </li>
           </ul>
         </section>

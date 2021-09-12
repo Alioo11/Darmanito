@@ -76,31 +76,32 @@ function FAQ() {
             </div>
             <div className='FAQ__titile'>داروخانه</div>
           </div>
-          <div className='FAQ__cards__card FAQ__cards__card--deactive'>
+          <div className='FAQ__cards__card deactive-item'>
             <div className='FAQ__cards__card__img'>
               <img src={shop} alt='pharmacy' />
             </div>
             <div className='FAQ__cards__card__titile'>فروشگاه</div>
           </div>
-          <div className='FAQ__cards__card FAQ__cards__card--deactive'>
+          <div className='FAQ__cards__card deactive-item'>
             <span>به زودی</span>
             <div className='FAQ__cards__card__img'>
               <img src={doctor_toys} alt='pharmacy' />
             </div>
             <div className='FAQ__cards__card__titile'>ویزیت آنلاین</div>
           </div>
-          <div className='FAQ__cards__card FAQ__cards__card--deactive'>
+          <div className='FAQ__cards__card deactive-item'>
             <span>به زودی</span>
             <div className='FAQ__cards__card__img'>
               <img src={calendar} alt='pharmacy' />
             </div>
-            <div className='FAQ__cards__card__titile'>ویزیت آنلاین</div>
+            <div className='FAQ__cards__card__titile '>ویزیت آنلاین</div>
           </div>
         </main>
         <div className='FAQ__Questions-container '>
           {questionData.map((data) => {
             return (
               <QuestionsAndAnswers
+                key={data.id}
                 questionData={data}
                 hadleOpenQuestion={hadleOpenQuestion}
               />

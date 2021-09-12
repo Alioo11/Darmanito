@@ -38,7 +38,7 @@
   padding: 3rem 5rem;
   direction: rtl;
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 20rem);
   overflow-x: scroll;
 }
 .FAQ__cards__card {
@@ -50,9 +50,7 @@
   box-shadow: 0px 0px 25px rgba(24, 148, 255, 0.18);
   position: relative;
 }
-.FAQ__cards__card--deactive {
-  filter: grayscale(1);
-}
+
 .FAQ__cards__card span {
   background-color: var(--blue);
   color: white;
@@ -70,9 +68,9 @@
 
 /***********************FAQ questions and answers*********************************/
 .FAQ__Questions-container {
-  width: 90%;
   height: fit-content;
-  padding: 5%;
+  width: 90%;
+  margin: auto;
 }
 
 .FAQ__Questions {
@@ -80,7 +78,7 @@
   z-index: 20;
   direction: rtl;
   border-bottom: solid 1px rgb(232, 232, 232);
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   transition: height 500ms;
@@ -108,7 +106,7 @@
   padding: 0px 30px 0px 30px;
 }
 .FAQ__Questions__symbol img {
-  width: 100%;
+  width: 1rem;
 }
 
 .hide {
@@ -136,6 +134,10 @@
   .FAQ__blue-header__left-shape {
     display: none;
   }
+  .FAQ__cards {
+    padding: 3rem 4rem;
+    grid-template-columns: repeat(4, 16rem);
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -146,7 +148,11 @@
   .FAQ__blue-header img {
     display: none;
   }
+  .FAQ__title {
+    margin: 2rem 2rem;
+  }
   .FAQ__cards {
+    padding: 3rem 2rem;
     grid-template-columns: repeat(4, 150px);
   }
   .questions-and-answers {
@@ -160,5 +166,9 @@
   }
   .FAQ__Questions--open-answer {
     height: 12rem;
+  }
+  .FAQ__Questions-container {
+    width: 100%;
+    margin: 1% 0%;
   }
 }
