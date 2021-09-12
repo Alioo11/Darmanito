@@ -55,16 +55,19 @@
 }
 .contact-us__form p {
   margin: 0.5rem 0rem;
+  font-size: 0.87em;
 }
 
 .contact-us__form input {
   width: 90%;
   height: 3rem;
   border-radius: 0.6rem;
-  border: 1px solid rgb(155, 155, 155);
-  font-size: 1rem;
+  border: 1px solid rgb(189, 189, 189);
+  font-size: 0.9rem;
 }
-
+.contact-us__form input::placeholder {
+  padding: 0em 0.5em;
+}
 .contact-us__form input:focus {
   border: 1px solid var(--blue);
   outline: none;
@@ -76,6 +79,10 @@
   border-radius: 0.6rem;
   border: 1px solid rgb(155, 155, 155);
   font-size: 1rem;
+}
+.contact-us__form textarea::placeholder {
+  padding: 0em 0.5em;
+  font-size: 0.9em;
 }
 .contact-us__form textarea:focus {
   border: 1px solid var(--blue);
@@ -117,6 +124,9 @@
 .contact-us__map__card__email {
   direction: rtl;
 }
+.contact-us__map__card__email h3 {
+  font-weight: 100;
+}
 .contact-us__map__card__email p {
   color: var(--blue);
   margin: 0;
@@ -127,6 +137,9 @@
 }
 .contact-us__map__card__phone {
   direction: rtl;
+}
+.contact-us__map__card__phone h3 {
+  font-weight: 100;
 }
 .contact-us__map__card__phone p {
   color: var(--blue);
@@ -141,6 +154,7 @@
     font-size: 0.9rem;
     width: 90%;
     margin: 0;
+    border-radius: 0;
   }
 
   .contanct-us__blue-header__left-shape {
@@ -164,6 +178,7 @@
 @media only screen and (max-width: 720px) {
   .contact-us__map__card {
     bottom: -150px;
+    border-radius: 0.8rem;
   }
   .contact-us__form {
     margin-top: 12rem;
@@ -175,7 +190,7 @@
   .contact-us__map__card {
     width: 80%;
     margin: 5%;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.227);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.227);
   }
   .contact-us__map {
     min-height: 300px;

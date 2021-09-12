@@ -38,8 +38,8 @@
   padding: 3rem 5rem;
   direction: rtl;
   display: grid;
-  grid-template-columns: repeat(4, 20rem);
-  overflow-x: scroll;
+  grid-template-columns: repeat(4, 5fr);
+  /* overflow-x: scroll; */
 }
 .FAQ__cards__card {
   text-align: center;
@@ -140,6 +140,11 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .FAQ__cards {
+    overflow-x: scroll;
+  }
+}
 @media only screen and (max-width: 720px) {
   .FAQ__blue-header {
     font-size: 1.5rem;
